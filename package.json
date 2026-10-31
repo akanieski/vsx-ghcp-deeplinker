@@ -1,0 +1,39 @@
+{
+  "name": "vsx-ghcp-deeplinker",
+  "displayName": "GHCP Deeplinker",
+  "description": "Open a local folder in VS Code and launch GitHub Copilot Chat with an initial prompt.",
+  "version": "0.0.1",
+  "publisher": "akanieski",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akanieski/vsx-ghcp-deeplinker"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:ghcpdeeplinker.openLocalFolderAndChat"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ghcpdeeplinker.openLocalFolderAndChat",
+        "title": "Open Local Folder + Copilot Chat"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.5.4"
+  }
+}

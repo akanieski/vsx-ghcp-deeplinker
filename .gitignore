@@ -1,0 +1,12 @@
+# VS Code extension output
+out/
+
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+
+# Editor files
+.vscode/
+.DS_Store
